@@ -1,0 +1,13 @@
+name: 'THAT Private Action'
+description: 'Shhhhh...'
+
+inputs:
+  name:
+    description: 'Who are we saying hello to?'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.name }}
