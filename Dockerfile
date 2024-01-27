@@ -1,7 +1,5 @@
 FROM golang:latest
 
-RUN echo "The thing: $THE_THING"
-
 WORKDIR /app
 COPY go.mod go.mod
 COPY *.go ./
